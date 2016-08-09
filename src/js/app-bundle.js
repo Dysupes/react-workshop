@@ -21505,7 +21505,7 @@
 	var GuessTheNumber = __webpack_require__(178);
 	var YouClicked = __webpack_require__(179);
 	var CharacterCounter = __webpack_require__(180);
-	var CharacterLimit1 = __webpack_require__(182);
+	var CharacterLimit = __webpack_require__(181);
 	
 	var imageList = [{ id: 42, source: "http://placekitten.com/g/210/210", text: "Hello Kittenz!" }, { id: 43, source: "https://facebook.github.io/react/img/logo.svg", text: "React Logo" }, { id: 44, source: "https://media.giphy.com/media/EldfH1VJdbrwY/giphy.gif", text: "Mind Blown!" }];
 	var childrenOfLayout = [{ id: 12, source: "https://facebook.github.io/react/", text: "About us" }];
@@ -21569,7 +21569,7 @@
 	      React.createElement(
 	        "div",
 	        null,
-	        React.createElement(CharacterLimit1, null)
+	        React.createElement(CharacterLimit, null)
 	      ),
 	      React.createElement(
 	        "footer",
@@ -21750,6 +21750,11 @@
 	      timesClicked: this.state.timesClicked + 1
 	    });
 	  },
+	  resetButtonClick: function resetButtonClick() {
+	    this.setState({
+	      timesClicked: 0
+	    });
+	  },
 	  render: function render() {
 	    var message;
 	
@@ -21770,6 +21775,11 @@
 	        "button",
 	        { onClick: this.handleButtonClick },
 	        "Click here"
+	      ),
+	      React.createElement(
+	        "button",
+	        { onClick: this.resetButtonClick },
+	        "Reset"
 	      ),
 	      React.createElement(
 	        "p",
@@ -21826,8 +21836,7 @@
 	module.exports = CharacterCounter;
 
 /***/ },
-/* 181 */,
-/* 182 */
+/* 181 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";

@@ -4,7 +4,7 @@ var Layout = require("./Layout");
 var GuessTheNumber = require("./GuessTheNumber");
 var YouClicked = require("./YouClicked");
 var CharacterCounter = require("./CharacterCounter");
-var CharacterLimit1 = require("./CharacterLimit1");
+var CharacterLimit = require("./CharacterLimit");
 
 
 var imageList = [
@@ -54,7 +54,7 @@ var App = React.createClass({
           <CharacterCounter />
         </div>
         <div>
-          <CharacterLimit1 />
+          <CharacterLimit />
         </div>
 
         <footer>

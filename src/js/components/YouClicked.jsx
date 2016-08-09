@@ -13,6 +13,11 @@ var YouClicked = React.createClass({
       timesClicked: this.state.timesClicked + 1
     });
   },
+  resetButtonClick: function() {
+    this.setState({
+      timesClicked: 0
+    });
+  },
   render: function () {
     var message;
 
@@ -32,6 +37,7 @@ var YouClicked = React.createClass({
     return(
     <div>
       <button onClick={this.handleButtonClick}>Click here</button>
+      <button onClick={this.resetButtonClick}>Reset</button>
       <p>{message}</p>
     </div>
   );
