@@ -5,6 +5,8 @@ var GuessTheNumber = require("./GuessTheNumber");
 var YouClicked = require("./YouClicked");
 var CharacterCounter = require("./CharacterCounter");
 var CharacterLimit = require("./CharacterLimit");
+var GitHubProfile = require('./GitHubProfile');
+var GitHubSearch = require('./GitHubSearch');
 
 
 var imageList = [
@@ -56,7 +58,9 @@ var App = React.createClass({
         <div>
           <CharacterLimit />
         </div>
-
+        <div>
+          <GitHubSearch />
+        </div>
         <footer>
           Copyright 2016 Dysupes
         </footer>
